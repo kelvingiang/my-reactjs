@@ -1,0 +1,29 @@
+#menu {
+    li:first-child {
+        border-left: 0px solid #000;
+    }
+
+    li {
+        display: inline;
+        padding: 0px 30px;
+        border-right: 1px solid #000;
+        opacity: 0.6;
+        cursor: pointer;
+        color: "#fff";
+        font-size: 23px;
+        text-decoration: none;
+        &:hover {
+            opacity: 1;
+            background-color: #999;
+        }
+
+        a {
+            &:hover{
+                color: yellow;
+            }
+            &:active {
+                color: brown;
+            }
+        }
+    }
+}

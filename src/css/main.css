@@ -1,0 +1,196 @@
+h1 {
+  font-size: 2rem;
+  color: red; }
+
+h2.productName {
+  font-size: 0.5rem;
+  color: #ff5100; }
+
+a:hover {
+  text-decoration: none; }
+
+ul li {
+  list-style-type: none; }
+
+.product-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left; }
+  .product-content .product-item {
+    border-width: 1px;
+    border-radius: 3px;
+    border-style: dashed;
+    width: 30%;
+    margin: 5px;
+    padding: 5px;
+    text-align: center; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace; }
+
+ul.member-list {
+  display: flex;
+  flex-wrap: wrap; }
+  ul.member-list li {
+    width: 30%; }
+    ul.member-list li .member-item {
+      display: flex;
+      border: 0.1rem solid #ccc;
+      margin: 0.2rem;
+      border-radius: 0.2rem; }
+      ul.member-list li .member-item div div {
+        border-bottom: 0.1rem dotted #666; }
+      ul.member-list li .member-item div img {
+        width: 90%;
+        margin: 0.2rem; }
+
+ul.todo-list li {
+  border-bottom: 0.2rem solid #666;
+  padding: 0.5rem 0.8rem; }
+  ul.todo-list li .todo-item {
+    display: flex;
+    flex-direction: row; }
+    ul.todo-list li .todo-item div {
+      width: 20%; }
+  ul.todo-list li:hover {
+    background-color: #ccc; }
+
+.link-style {
+  cursor: pointer;
+  color: rgba(255, 0, 0, 0.5);
+  font-weight: bold; }
+  .link-style:hover {
+    color: red; }
+
+.view-style {
+  cursor: pointer;
+  color: rgba(0, 0, 255, 0.5);
+  font-weight: bold; }
+  .view-style:hover {
+    color: blue; }
+
+#menu li:first-child {
+  border-left: 0px solid #000; }
+#menu li {
+  display: inline;
+  padding: 0px 30px;
+  border-right: 1px solid #000;
+  opacity: 0.6;
+  cursor: pointer;
+  color: "#fff";
+  font-size: 23px;
+  text-decoration: none; }
+  #menu li:hover {
+    opacity: 1;
+    background-color: #999; }
+  #menu li a:hover {
+    color: yellow; }
+  #menu li a:active {
+    color: brown; }
+
+.btn-submit {
+  background-color: rgba(255, 255, 0, 0.8);
+  padding: 1rem 2rem;
+  border-radius: .5rem;
+  border: green 0.1rem solid;
+  font-weight: bold;
+  color: gray; }
+  .btn-submit:hover {
+    background-color: rgba(8, 51, 247, 0.863); }
+  .btn-submit:active {
+    background-color: red;
+    border: green 0.1rem solid; }
+
+.from-text {
+  padding-top: 0.8rem;
+  font-weight: bold; }
+
+input[type=text], input[type=passwrod], select {
+  width: 90%;
+  height: 2.5rem;
+  margin: 0.2rem 0;
+  border-radius: 0.3rem; }
+
+input[type=checkbox], input[type=radio] {
+  margin-left: 2rem; }
+
+.admin-member-list {
+  width: 100%; }
+  .admin-member-list li {
+    border-bottom: #ccc dotted 0.1rem;
+    padding: 0;
+    transition-duration: 1s;
+    color: rgba(53, 54, 53, 0.5); }
+    .admin-member-list li:nth-child(odd) {
+      background-color: #f9fdf6; }
+    .admin-member-list li:hover .del-item {
+      color: red !important; }
+    .admin-member-list li:hover {
+      background-color: #f1fbfb;
+      color: #353635; }
+    .admin-member-list li div.list-title {
+      height: 5rem;
+      background-color: #fd7506;
+      display: flex; }
+      .admin-member-list li div.list-title div {
+        border-right: 0.1rem solid #666;
+        height: 100%;
+        font-weight: bold; }
+        .admin-member-list li div.list-title div h3 {
+          color: white;
+          text-align: center;
+          font-size: 1.5rem;
+          padding-top: 1.5rem; }
+        .admin-member-list li div.list-title div:nth-child(1) {
+          width: 10%; }
+        .admin-member-list li div.list-title div:nth-child(2) {
+          width: 20%;
+          justify-content: flex-start;
+          padding-left: 2rem; }
+        .admin-member-list li div.list-title div:nth-child(3) {
+          width: 30%;
+          justify-content: flex-start;
+          padding-left: 2rem; }
+        .admin-member-list li div.list-title div:nth-child(4) {
+          width: 40%;
+          justify-content: flex-start;
+          padding-left: 2rem; }
+    .admin-member-list li div.list-row {
+      display: flex;
+      min-height: 3rem;
+      align-items: center; }
+      .admin-member-list li div.list-row div:nth-child(1) {
+        width: 10%;
+        text-align: center; }
+      .admin-member-list li div.list-row div:nth-child(2) {
+        width: 20%;
+        justify-content: flex-start;
+        padding-left: 2rem; }
+      .admin-member-list li div.list-row div:nth-child(3) {
+        width: 30%;
+        justify-content: flex-start;
+        padding-left: 2rem; }
+      .admin-member-list li div.list-row div:nth-child(4) {
+        width: 40%;
+        justify-content: flex-start;
+        padding-left: 2rem; }
+      .admin-member-list li div.list-row div.link-item a {
+        color: rgba(0, 128, 0, 0.5);
+        font-weight: bold;
+        display: block; }
+        .admin-member-list li div.list-row div.link-item a:hover {
+          color: green; }
+      .admin-member-list li div.list-row div.del-item {
+        color: rgba(255, 0, 0, 0.02);
+        padding-right: 2rem;
+        cursor: pointer;
+        transition-duration: 3s; }
+
+/*# sourceMappingURL=main.css.map */

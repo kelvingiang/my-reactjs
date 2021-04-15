@@ -1,0 +1,103 @@
+@mixin ListPadding {
+    justify-content: flex-start;
+    padding-left: 2rem;
+}
+
+.admin-member-list {
+    width: 100%;
+    li {
+        border-bottom: #ccc dotted 0.1rem;
+        padding: 0;
+        transition-duration: 1s;
+        color: rgba(53, 54, 53, 0.5);
+
+        &:nth-child(odd) {
+            background-color: rgb(249, 253, 246);
+        }
+
+        &:hover .del-item {
+            color: rgb(255, 0, 0) !important;
+        }
+
+        &:hover {
+            background-color: rgb(241, 251, 251);
+            color: rgba(53, 54, 53, 1);
+        }
+
+        div.list-title {
+            height: 5rem;
+            background-color: rgb(253, 117, 6);
+            display: flex;
+            div {
+                border-right: 0.1rem solid #666;
+                height: 100%;
+                font-weight: bold;
+                h3 {
+                    color: rgb(255, 255, 255);
+                    text-align: center;
+                    font-size: 1.5rem;
+                    padding-top: 1.5rem;
+                }
+
+                &:nth-child(1) {
+                    width: 10%;
+                }
+                &:nth-child(2) {
+                    width: 20%;
+                    @include ListPadding;
+                }
+                &:nth-child(3) {
+                    width: 30%;
+                    @include ListPadding;
+                }
+                &:nth-child(4) {
+                    width: 40%;
+                    @include ListPadding;
+                }
+            }
+        }
+
+        div.list-row {
+            display: flex;
+            min-height: 3rem;
+            align-items: center;
+
+            div {
+                &:nth-child(1) {
+                    width: 10%;
+                    text-align: center;
+                }
+                &:nth-child(2) {
+                    width: 20%;
+                    @include ListPadding;
+                }
+                &:nth-child(3) {
+                    width: 30%;
+                    @include ListPadding;
+                }
+                &:nth-child(4) {
+                    width: 40%;
+                    @include ListPadding;
+                }
+
+                &.link-item {
+                    a {
+                        color: rgba(0, 128, 0, 0.5);
+                        font-weight: bold;
+                        display: block;
+                        &:hover {
+                            color: rgba(0, 128, 0, 1);
+                        }
+                    }
+                }
+
+                &.del-item {
+                    color: rgba(255, 0, 0, 0.02);
+                    padding-right: 2rem;
+                    cursor: pointer;
+                    transition-duration: 3s;
+                }
+            }
+        }
+    }
+}
