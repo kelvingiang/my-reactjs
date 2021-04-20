@@ -1,4 +1,3 @@
-import { wait } from '@testing-library/dom';
 import React, { Component, useState } from 'react';
 import MemberApi from '../../api/member_api.js';
 import MemberView from '../member/member-view';

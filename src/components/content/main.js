@@ -17,11 +17,13 @@ import Admin from './admin';
 import AdminMemberUpdate from '../admin/admin-member-update';
 import AdminMemberAddNew from '../admin/admin-member-addnew';
 
+// ===Hook ====
 import ColorBox from '../use_state/changcolor/colorbox';
 import DataList from '../use_state/todolist/index';
+import EffectIndex from '../use_effect/index';
 
 import Error404 from '../error/404';
-import TodoList from '../use_state/todolist/todolist';
+
 
 
 
@@ -49,6 +51,7 @@ class Main extends Component {
 
                         <Route path="/usestate" component={ColorBox} />
                         <Route path="/todolist" component={DataList} />
+                        <Route path='/useeffect' component={EffectIndex} />
 
                         <Route component={Error404} />
 
